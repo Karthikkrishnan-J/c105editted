@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C103</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <center>
+    <body style="align-items: center; background-color: pink;">
+        <h1 style="color: rgb(0, 0, 0);">FACE RECOGNITION WEB APP</h1>
+        <h2 style="color: rgb(167, 0, 119);">Model Is Trained By Teachable Machine</h2>
+        <div class="FamilyNames"><label>GrandMother</label></div><br>
+        <div class="FamilyNames"><label>GrandFather</label></div><br>
+        <div class="FamilyNames"><label>Mother</label></div><br>
+        <div class="FamilyNames"><label>Me</label></div><br>
+        <h2 style="color: rgb(255, 0, 0);">Camera</h2>
+        <div id="Camera"></div>
+        <h2 style="color: rgb(255, 0, 0);">Picture</h2>
+        <div id="Display"></div>
+        <br>
+        <button onclick="capture()" style="background-color: greenyellow; color: blue; padding: 20px; border-radius: 10px;">Capture Image</button>
+        <br><br>
+        <button style="background-color: greenyellow; color: blue; padding: 20px; border-radius: 10px;">Identify Image</button>
+        <span><h2>Item : </h2></span>
+        <span><h2 id="item"></h2></span>
+        <span><h2>Accuracy : </h2></span>
+        <span><h2 id="accuracy"></h2></span>
+    </center>
+        <script src="main.js"></script>
+    </body>
+</html>
